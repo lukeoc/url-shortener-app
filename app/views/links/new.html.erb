@@ -1,0 +1,17 @@
+<h1>create new link</h1>
+
+<%= form_tag '/links', method: :post do %>
+
+  <div>
+    <%= label_tag :slug %>
+    <%= text_field_tag :slug %>
+  </div>
+
+  <div>
+    <%= label_tag :target_url %>
+    <%= text_field_tag :target_url %>
+  </div>
+
+  <%= submit_tag 'create link' %>
+
+<% end %>
